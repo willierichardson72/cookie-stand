@@ -91,18 +91,26 @@ function displayStores () {
 function formhandler (event) {
   event.preventDefault();
    if (!event.target.loc.value || !event.target.min.value || !event.target.max.value
-   || !event.target.loc.value);
+   || !event.target.loc.value); {
    return alerts ('Fields cannot be empty!');
+}
    console.log(event.target.min.value);
    console.log(event.target.max.value);
    console.log(event.target.avg.value);
    console.log(event.target.loc.value);
-}
+
 cookieform.addEventListener('submit', formhandler);
 
-var newStore = new CookieStand('loc', 'min', 'max', 'avg');
+var min = event.target.min.value;
+var max = event.target.max.value;
+var avg = event.target.avg.value;
+var loc = event.target.loc.value;
+
+
+var newStore = new cookieStand ('loc', 'min', 'max', 'avg');
 locations.push(newStore);
 newStore.displayStores();
+};
 
 
 
