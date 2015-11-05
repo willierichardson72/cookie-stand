@@ -82,11 +82,29 @@ alki.calculateDailyTotal();
 
 StoreNames();
 
+function displayStores () {
+  for (var f = 0; f < locations.length; f++) {
+    locations[i].cookieStand ();
+  }
+}
+
 function formhandler (event) {
- event.preventDefault();
- console.log(event.target.min.value);
+  event.preventDefault();
+   if (!event.target.loc.value || !event.target.min.value || !event.target.max.value
+   || !event.target.loc.value);
+   return alerts ('Fields cannot be empty!');
+   console.log(event.target.min.value);
+   console.log(event.target.max.value);
+   console.log(event.target.avg.value);
+   console.log(event.target.loc.value);
 }
 cookieform.addEventListener('submit', formhandler);
+
+var newStore = new CookieStand('loc', 'min', 'max', 'avg');
+locations.push(newStore);
+newStore.displayStores();
+
+
 
 
 
