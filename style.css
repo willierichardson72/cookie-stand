@@ -2,3 +2,18 @@ ul li {
   font-size: 30px;
   font-family: 'Indie Flower', cursive;
 }
+
+header {
+  font-family: 'Indie Flower', cursive;
+  color: blue;
+}
+
+body {
+  background-color: DarkCyan;
+}
+
+p {
+  font-family: 'Indie Flower', cursive;
+  color: orange;
+}
+
