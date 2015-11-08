@@ -1,11 +1,31 @@
+
 ul li {
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Indie Flower', cursive;
+  text-align: right;
+}
+
+div {
+  display: inline;
+}
+
+h5 {
+  position: top;
+  font-family: 'Indie Flower', cursive;
+}
+
+div.row2 {
+  text-align: inline;
+}
+
+.column2 {
+  text-align:
 }
 
 header {
   font-family: 'Indie Flower', cursive;
   color: blue;
+  text-align: center;
 }
 
 body {
@@ -15,5 +35,186 @@ body {
 p {
   font-family: 'Indie Flower', cursive;
   color: orange;
+  font-size: 25px;
+  text-align: center;
 }
 
+.ball {
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  border-radius: 10px;
+  background-color: #c0392b;
+}
+
+@-webkit-keyframes bouncing {
+  40%, 70%, 90% {
+    bottom: 0;
+    -webkit-animation-timing-function: ease-out;
+  }
+  0% {
+    bottom: 200px;
+    left: 0;
+    -webkit-animation-timing-function: ease-in;
+  }
+  55% {
+    bottom: 50px;
+    -webkit-animation-timing-function: ease-in;
+  }
+  80% {
+    bottom: 25px;
+    -webkit-animation-timing-function: ease-in;
+  }
+  95% {
+    bottom: 10px;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    left: 110px;
+    bottom: 0;
+    -webkit-animation-timing-function: ease-out;
+  }
+  @-moz-keyframes bouncing {
+    40%, 70%, 90% {
+      bottom: 0;
+      -webkit-animation-timing-function: ease-out;
+    }
+    0% {
+      bottom: 200px;
+      left: 0;
+      -webkit-animation-timing-function: ease-in;
+    }
+    55% {
+      bottom: 50px;
+      -webkit-animation-timing-function: ease-in;
+    }
+    80% {
+      bottom: 25px;
+      -webkit-animation-timing-function: ease-in;
+    }
+    95% {
+      bottom: 10px;
+      -webkit-animation-timing-function: ease-out;
+    }
+    100% {
+      left: 110px;
+      bottom: 0;
+      -webkit-animation-timing-function: ease-out;
+    }
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+}
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      transition: all .1s;
+    }
+    body{
+    background-color: #424242;
+      font-family: 'Droid Sans', sans-serif;
+    }
+    .group{
+      text-align: center;
+      margin: 20px auto;
+    }
+    .group button{
+      margin-top: 10px;
+    }
+    button{
+/*      box-sizing: border-box;*/
+      background: NONE;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+      padding: 15px 70px;
+      color:white;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.41);
+      box-shadow: 0 3px 0 0 #383838;
+      border:3px solid transparent;
+
+
+      animation: pulse 1s linear infinite alternate;
+      -webkit-animation: pulse 1s linear infinite alternate;
+    }
+    .active,
+    button:active{
+      background-image: linear-gradient(rgba(0,0,0,.1) 13%, transparent 13%,transparent);
+      box-shadow: 0 1px 0 0 #383838;
+      color: rgba(0, 0, 0,.45);
+      text-shadow: none;
+
+
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused;
+    }
+    button:focus,
+    button:hover{
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused;
+    }
+
+
+    .blam:focus,
+    .blam:hover{
+      background-color:#0097bd;
+    }
+    .blam{
+      background-color:#00bff0;
+      border-color: #00bff0;
+    }
+
+    .syke:focus,
+    .syke:hover{
+      background-color:#ad4e4e;
+    }
+    .syke{
+      background-color:#e06464;
+      border-color:#e06464;
+    }
+
+    .later:focus,
+    .later:hover{
+      background-color:#7c8b8f;
+    }
+    .later{
+      background-color:#a8bdc2;
+      border-color:#a8bdc2;
+    }
+
+    @-webkit-keyframes pulse {
+      100% {
+        transform: translateY(6.9px);
+      }
+    }
+
+    @keyframes pulse {
+      100% {
+        transform: translateY(6.9px);
+      }
+    }
+
+img.large {
+  width: 200px;
+  height: 50px;
+  : scale(1.5);
+}
+
+img.medium {
+  width: 300px;
+  height: 200px;
+
+
+}
+img.small {
+  width: 50px
+  height: 50px;
+}
+
+.five-columns {
+ width: 200px;
+ height: 200px;
+}
